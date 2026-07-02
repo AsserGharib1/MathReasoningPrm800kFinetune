@@ -1,5 +1,9 @@
 # Process-Supervised Math Reasoning — LLM Fine-Tuning on PRM800K
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AsserGharib1/MathReasoningPrm800kFinetune/blob/main/prm800k_math_reasoning_finetune.ipynb)
+[![View on nbviewer](https://img.shields.io/badge/view%20full%20notebook-nbviewer-F37626?logo=jupyter&logoColor=white)](https://nbviewer.org/github/AsserGharib1/MathReasoningPrm800kFinetune/blob/main/prm800k_math_reasoning_finetune.ipynb)
+
+
 Fine-tuning a causal LLM on **PRM800K** (OpenAI's process-supervision dataset of step-level ratings for mathematical solutions) so the model learns to judge solution steps as correct (+), neutral (0), or incorrect (−).
 
 ## Highlights
@@ -8,6 +12,10 @@ Fine-tuning a causal LLM on **PRM800K** (OpenAI's process-supervision dataset of
 - **Parameter-efficient fine-tuning** with LoRA (`peft`) and `trl`, using Hugging Face `transformers` + `datasets`.
 - Custom data loading/formatting for PRM800K's phase-1/phase-2 JSONL structure.
 - Token-level evaluation of rating predictions with accuracy breakdowns and training curves (outputs preserved).
+
+## Training curves
+
+![Training curves](figures/training_curves.png)
 
 ## Repository contents
 
